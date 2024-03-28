@@ -1,15 +1,5 @@
-/* .places {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  max-width: 984px;
-  margin: auto;
-  margin-top: 92px;
-} */
-
 .places {
   display: grid;
-  grid-template-columns: auto ;
   grid-template-rows: auto auto auto auto auto;
   gap: 80px;
   max-width: 984px;
@@ -134,7 +124,6 @@
   }
 }
 
-
 @media screen and (max-width: 800px) {
   .places {
     gap: 40px;
@@ -162,7 +151,7 @@
     flex-direction: column;
     gap: 0px;
   }
-  .places__place-artist{
+  .places__place-artist {
     margin-bottom: 30px;
   }
   .places__place-image {
@@ -173,12 +162,9 @@
     margin-bottom: 7px;
   }
   .places__place-button {
-
     width: 288px;
     padding: 16px 0px;
 
     font-size: 14px;
-
-
   }
 }
