@@ -1,18 +1,16 @@
-
-.intro{
+.intro {
   display: flex;
   flex-direction: column;
-  justify-content: center
+  justify-content: center;
 }
 
-.intro__content{
-  max-width: 984px;
+.intro__content {
+  max-width: 1017px;
   width: 100%;
   margin: auto;
 }
 
-.intro__content-title{
-
+.intro__content-title {
   font-size: 54px;
   font-weight: 900;
   line-height: 1.07;
@@ -21,7 +19,7 @@
   margin-bottom: 40px;
 }
 
-.intro__content-quote{
+.intro__content-quote {
   max-width: 722px;
   width: 100%;
   font-size: 24px;
@@ -31,7 +29,7 @@
   margin: 0;
 }
 
-.intro__content-quote-cite{
+.intro__content-quote-cite {
   max-width: 722px;
   width: 100%;
   font-size: 24px;
@@ -42,7 +40,7 @@
   margin: 0;
 }
 
-.intro__content-text{
+.intro__content-text {
   max-width: 722px;
   width: 100%;
   font-size: 16px;
@@ -54,20 +52,47 @@
   margin-bottom: 118px;
 }
 
-.intro__photos{
+.intro__photos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 16px;
-  margin: auto;
 }
 
-.intro__photos-item{
+.intro__photos-item {
   box-sizing: border-box;
   margin: 0;
   width: 100%;
 }
 
-.intro__photos-image{
+.intro__photos-image {
   width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .intro__photos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro__content-title {
+    font-size: 32px;
+    line-height: 1.09;
+    margin-bottom: 9px;
+  }
+  .intro__content-quote {
+    line-height: 1.25;
+  }
+  .intro__content-text {
+    margin-top: 0px;
+    margin-bottom: 38px;
+  }
+  .intro__photos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 12px;
+  }
 }

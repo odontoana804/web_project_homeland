@@ -43,4 +43,33 @@
   margin-bottom: 92px;
 }
 
+@media screen and (max-width: 800px){
+  .header__title{
+    margin: auto auto 99px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .header__logo {
+    width: 200px;
+    height: 51.85px;
+    margin: 20px auto 50.15px auto;
+  }
+  .header__title{
+    font-size: 40px;
+    line-height: 1.1;
+    margin: auto 5px 32px;
+  }
+
+  .header__subtitle{
+    font-size: 16px;
+    line-height: 1.25;
+    margin: auto 5px 40px;
+  }
+
+  .header__image{
+    margin-bottom: 44px;
+  }
+}
 

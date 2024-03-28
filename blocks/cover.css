@@ -73,3 +73,25 @@
 .cover__content-button:hover {
   background-color: #0063d2;
 }
+
+@media screen and (max-width: 600px) {
+  .cover {
+    margin: 64px auto;
+    height: 254px;
+  }
+  .cover__content {
+    gap: 16px;
+  }
+  .cover__content-title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+  .cover__content-subtitle {
+    font-size: 16px;
+    line-height: 1.14;
+  }
+
+  .cover__content-button {
+    width: 198px;
+  }
+}
