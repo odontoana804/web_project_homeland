@@ -1,0 +1,122 @@
+.places {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: 984px;
+  margin: auto;
+  margin-top: 92px;
+}
+
+.places__place {
+  max-width: 984px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "title artist"
+    "image description"
+    "button description"
+    ". description";
+  gap: 48px 40px;
+}
+
+.places__place-title {
+  grid-area: title;
+  max-width: 460px;
+  width: 100%;
+  font-size: 72px;
+  line-height: 1.05;
+  font-weight: 900;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.places__place-image {
+  grid-area: image;
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.places__place-image_kiev{
+  background-image: url(../images/places/image-Kiev.png);
+}
+
+.places__place-image_criccieth{
+  background-image: url(../images/places/image-criccieth.png);
+}
+
+.places__place-image_berea{
+  background-image: url(../images/places/image-berea.png);
+}
+
+.places__place-image_muramvya{
+  background-image: url(../images/places/image-muramvya.png);
+}
+
+.places__place-image_bogota{
+  background-image: url(../images/places/image-bogota.jpg);
+}
+
+
+.places__place-button {
+  grid-area: button;
+  width: 355px;
+  padding: 13px 20px;
+  border-radius: 4px;
+  background-color: #0278fe;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.21;
+  font-weight: 600;
+  text-align: center;
+}
+
+.places__place-button:hover {
+  background-color: #0063d2;
+}
+
+.places__place-artist {
+  grid-area: artist;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.places__place-artist-title {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.21;
+  color: #aaaaaa;
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.places__place-artist-name {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.22;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.places__place-description {
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.places__place-description-text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.63;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+

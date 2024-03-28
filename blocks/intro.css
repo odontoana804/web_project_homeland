@@ -1,0 +1,73 @@
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.intro__content{
+  max-width: 984px;
+  width: 100%;
+  margin: auto;
+}
+
+.intro__content-title{
+
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 1.07;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.intro__content-quote{
+  max-width: 722px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.4;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.intro__content-quote-cite{
+  max-width: 722px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.4;
+  text-align: right;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.intro__content-text{
+  max-width: 722px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.63;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 32px;
+  margin-bottom: 118px;
+}
+
+.intro__photos{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+  margin: auto;
+}
+
+.intro__photos-item{
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+}
+
+.intro__photos-image{
+  width: 100%;
+}
